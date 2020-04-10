@@ -9,6 +9,9 @@ function searchPhotos() {
     //api url, you need to concatenate the clientId and the search result
     let url = "https://api.unsplash.com/search/photos/?client_id=" + clientId + "&query="+ query
 
+    // second endpoint, but read the documentation for more
+    // let url = "https://api.unsplash.com/search/photos/?client_id=" + clientId
+
     //time to make a request and display the images
     fetch(url).then(function (data){
         // console.log(data)
